@@ -2,11 +2,11 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-const vip = '/api/Movie/WatchMovie';
+const vip = '/api/Movie/WatchMovieNew';
 
-const checkvip = '/api/Account/CheckVip';
+const checkvip = '/api/account/IsVip';
 
-const vipinfo = '/api/account/IndexDetail';
+const vipinfo = '/api/account/indexDetail';
 
 const wg = '/api/movie/WatchFgMovie';
 
@@ -27,9 +27,17 @@ if (url.indexOf(checkvip) != -1) {
 
 if (url.indexOf(vipinfo) != -1) {
 	obj["nickName"] = "wooxi";
+	obj["headPortrait"] = "/ImageAll/heard/pear23.jpg";
+	obj["rewardBadge"] = "ture";
    obj["vipLevel"] = "101";
    obj["vipEndTime"] = "2099-12-31";
+	obj["isTenRealCarUser"] = "true";
    obj["cartoonVip"] = "true";
+	obj["cartoonVipEndTime"] = "2099-12-31";
+	obj["closeAccountPay"] = "true";
+	obj["closeInvite"] = "true";
+	obj["canShowInvite"] = "true";
+	obj["hadTopicBadge"] = "true";
 	body = JSON.stringify(obj);
  }
 
