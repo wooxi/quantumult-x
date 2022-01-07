@@ -19,7 +19,7 @@ if (url.indexOf(vip) != -1) {
 	body = JSON.stringify(obj);
  }
 
-if (url.indexOf(checkvip) != -1) {
+if (url.indexOf(isvip) != -1) {
 	obj["data"] = "1";
    obj["value"] = "true";
 	body = JSON.stringify(obj);
