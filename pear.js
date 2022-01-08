@@ -1,4 +1,4 @@
-var body = $script-response.body;
+var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
