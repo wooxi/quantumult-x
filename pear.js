@@ -9,7 +9,7 @@ QX:
 [mitm]
 hostname = bkcd.b-cdn.net,cn.youku-ca.com,souhu.mett.me,m.pearkin.com,www.baidu.com2.club
 pear下载地址
-https://www.pears.live?ivcode=DUJ7&t=20210504
+https://www.pears.live
 
 */
 
