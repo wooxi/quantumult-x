@@ -2,9 +2,9 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-const vip = '/api/Movie/WatchMovieNew';
+const newmovie = '/api/Movie/WatchMovieNew';
 
-const checkvip = '/api/account/IsVip';
+const checkvip = '/api/Account/CheckVip';
 
 const vipinfo = '/api/account/indexDetail';
 
@@ -14,12 +14,12 @@ const mh = '/api/Cartoon/LookPhoto';
 
 const tp = '/api/PictureSet/LookPhoto';
 
-if (url.indexOf(vip) != -1) {
+if (url.indexOf(newmovie) != -1) {
 	obj["canWath"] = "true";
 	body = JSON.stringify(obj);
  }
 
-if (url.indexOf(isvip) != -1) {
+if (url.indexOf(checkvip) != -1) {
 	obj["data"] = "1";
    obj["value"] = "true";
 	body = JSON.stringify(obj);
