@@ -1,3 +1,18 @@
+/*
+
+
+QX:
+[rewrite_local]
+#Pear会员
+^https:\/\/(cn.youku-ca.com|bkcd\.b-cdn.net|souhu.mett.me|m.pearkin.com|www.baidu.com2.club)\/(api\/movie\/WatchMovieNew|api\/account\/IsVip|api\/account\/IndexDetail) url script-response-body https://6678888.xyz/quantumultX/pear.js
+
+[mitm]
+hostname = bkcd.b-cdn.net,cn.youku-ca.com,souhu.mett.me,m.pearkin.com,www.baidu.com2.club
+pear下载地址
+https://www.pears.live?ivcode=DUJ7&t=20210504
+
+*/
+
 var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
