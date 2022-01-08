@@ -27,7 +27,6 @@ if (url.indexOf(isvip) != -1) {
 
 if (url.indexOf(vipinfo) != -1) {
 	obj["nickName"] = "wooxi";
-	obj["headPortrait"] = "/ImageAll/heard/pear23.jpg";
 	obj["rewardBadge"] = "ture";
    obj["vipLevel"] = "101";
    obj["vipEndTime"] = "2099-12-31";
